@@ -1,12 +1,58 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+p {
+  color: hsl(0deg, 0%, 40%);
+
+  strong {
+    color: hsl(160deg, 100%, 30%);
+  }
+}
+
+.max-width-wrapper {
+  width: 100%;
+}
+
+main {
+  border: 1px solid red;
+  background-color: hsl(0deg, 0%, 60%);
+  height: 100%;
+
+  div {
+    background-color: hsl(0deg, 0%, 100%);
+    border: 1px solid white;
+    margin: 50px;
+    /* 
+      width: fit-content;
+      height: fit-content;
+    */
+
+    p {
+      margin: 0 24px;
+      padding-bottom: 16px;
+    }
+
+    p:last-child {
+      padding-bottom: 24px;
+    }
+  }
+
+  h2 {
+    background-color: hsl(45deg, 100%, 50%);
+    border-bottom: 8px solid hsl(45deg, 100%, 40%);
+    padding: 16px;
+    margin-left: -5px;
+    width: fit-content;
+  }
 }
 
 /* Add styles here! */
